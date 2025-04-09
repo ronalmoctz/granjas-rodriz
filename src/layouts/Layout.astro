@@ -21,7 +21,8 @@ import Footer from "../components/Footer.astro";
 			content="Granjas Rodriz Oink y siempre contigo"
 		/>
 		<meta property="og:image" content="/images/og-image.webp" />
-
+		<meta property="og:title" content='”WhatsApp"/' />
+		<meta property="og:url" content="https://whatsapp.com" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta
 			name="twitter:title"
@@ -32,7 +33,9 @@ import Footer from "../components/Footer.astro";
 	</head>
 	<body>
 		<Header />
-		<slot />
+		<main>
+			<slot />
+		</main>
 		<!-- Se renderiza la ruta que estamos viendo -->
 		<Footer />
 	</body>

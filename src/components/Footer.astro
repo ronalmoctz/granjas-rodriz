@@ -1,10 +1,104 @@
 ---
+import { SOCIAL } from "../consts/social";
 import Container from "./Container.astro";
+import Phone from "../assets/phone.svg";
+import Location from "../assets/location.svg";
 ---
 
 <Container>
     <footer
-        class="bg-gray-200 h-[350px] max-w-screen-xl flex rounded-3xl relative min-h-[400px] w-full pb-32 2xl:mt-24 2xl:pb-96"
+        class="bg-gray-100 w-full py-8 px-6 md:px-8 2xl:px-20 rounded-3xl mb-4"
     >
+        <div
+            class="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between"
+        >
+            <!-- Logo + Redes -->
+            <div class="mb-8 md:mb-0 md:w-1/3">
+                <img
+                    src="/public/images/footer-img.webp"
+                    alt="footer-img"
+                    class="h-40 w-auto"
+                />
+                <div class="mt-4 flex flex-wrap items-center gap-2">
+                    {
+                        SOCIAL.map(({ url, image, name, label }) => (
+                            <a
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label={label ?? name}
+                                class="flex items-center justify-center bg-gray-300 p-2 rounded-full transition hover:scale-125"
+                            >
+                                <image.logo />
+                            </a>
+                        ))
+                    }
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="md:w-2/3 md:pl-6">
+                <h2 class="text-2xl font-semibold mb-4">Contacto</h2>
+                <div
+                    class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-md text-gray-700"
+                >
+                    <!-- Columna 1 -->
+                    <div>
+                        <p class="font-bold text-lg mb-2">Granjas Rodriz</p>
+
+                        <a
+                            href="https://maps.app.goo.gl/XsRqPYr8RHeUtWuq5"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 mb-1 hover:text-green-600 hover:underline"
+                        >
+                            <Location class="w-5 h-5 text-gray-700" />
+                            <span>Calle Porfirio Díaz S/N, El Arenal Hgo.</span>
+                        </a>
+
+                        <a
+                            href="tel:+527721199599"
+                            class="flex items-center gap-2 hover:text-blue-600"
+                        >
+                            <Phone class="w-5 h-5 text-gray-700" />
+                            <span>+52 (77) 2119-9599</span>
+                        </a>
+                    </div>
+
+                    <!-- Columna 2 -->
+                    <div>
+                        <p class="font-bold text-lg mb-2">
+                            Punto de venta Tezontepec
+                        </p>
+
+                        <a
+                            href="https://www.google.com/maps?q=Tezontepec+de+Aldama+Hgo.+Zona+Centro"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center gap-2 mb-1 hover:text-blue-600"
+                        >
+                            <Location class="w-5 h-5 text-gray-700" />
+                            <span>Tezontepec de Aldama Hgo. Zona Centro</span>
+                        </a>
+
+                        <a
+                            href="tel:+527731143802"
+                            class="flex items-center gap-2 hover:text-blue-600"
+                        >
+                            <Phone class="w-5 h-5 text-gray-700" />
+                            <span>+52 (77) 3114-3802</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-gray-300 my-6"></div>
+
+        <!-- Copyright -->
+        <div class="text-center text-xs text-gray-500 mt-4">
+            © {new Date().getFullYear()} Granjas Rodriz. Todos los derechos reservados.
+        </div>
     </footer>
 </Container>

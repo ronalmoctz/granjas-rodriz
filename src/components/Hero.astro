@@ -1,0 +1,30 @@
+---
+import Container from "./Container.astro";
+---
+
+<Container>
+    <div class="relative mt-10 mb-24 flex justify-center">
+        <!-- Imagen -->
+        <img
+            src="/public/images/granja-rodriz-hero.webp"
+            class="rounded-3xl object-cover w-[350px] h-[320px] sm:w-full sm:h-[750px]"
+            alt="hero-img"
+        />
+
+        <!-- Rectángulo de texto -->
+        <div
+            class="absolute bg-white rounded-2xl shadow-lg text-gray-800 px-6 py-4
+             -bottom-10 left-1/2 -translate-x-1/2 w-[300px] text-center
+             sm:-bottom-1 sm:left-auto sm:translate-x-0 sm:-right-1 sm:text-left sm:shadow-none sm:w-[450px] sm:h-[220px]"
+        >
+            <h2 class="text-lg sm:text-3xl font-semibold mb-2">
+                Criansa de calidad con las mejores razas
+            </h2>
+            <h4 class="sm:text-lg sm:text-pretty text-sm text-pretty">
+                En nuestra empresa, nos especializamos en la cría de puercos de
+                calidad mediante genética seleccionada, alimentación balanceada
+                y controles sanitarios.
+            </h4>
+        </div>
+    </div>
+</Container>
