@@ -1,7 +1,5 @@
 import type { Cerdo } from '../types/porcs'
 
-import Yorkshire from "/public/images/Yorkshire.webp"
-import LargeWhite from "/public/images/large-white.png"
 
 export const CERDOS: Cerdo[] = [
     // Machos
@@ -175,7 +173,7 @@ export const CERDOS: Cerdo[] = [
         linea: 'Líneas Solid Rock',
         description: 'El cerdo Yorkshire, se caracteriza por su cuerpo grande, piel blanca y orejas erectas. Reconocido por su capacidad de crecimiento eficiente y alta producción de lechones, es una raza preferida en la industria porcina. Su temperamento calmado y adaptabilidad la hacen ideal para sistemas de producción modernos y comerciales.',
         image: {
-            logo: Yorkshire,
+            logo: '/images/Yorkshire.webp',
             width: 300,
             height: 300
         },
@@ -207,7 +205,7 @@ export const CERDOS: Cerdo[] = [
         linea: 'Líneas Hypor',
         description: 'El Large White es una raza popular por su excelente capacidad reproductiva y su carne de alta calidad. Es ideal para la producción comercial.',
         image: {
-            logo: LargeWhite,
+            logo: '/images/large-white.png',
             width: 300,
             height: 300
         },
