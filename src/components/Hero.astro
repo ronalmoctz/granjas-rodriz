@@ -1,30 +1,54 @@
 ---
+// Hero.astro
 import Container from "./Container.astro";
 ---
 
 <Container>
-    <div class="relative mt-30 mb-30 flex justify-center">
-        <!-- Imagen -->
-        <img
-            src="/public/images/granja-rodriz-hero-main.webp"
-            class="rounded-3xl object-cover w-[350px] h-[320px] sm:w-full sm:h-[750px]"
-            alt="hero-img"
-        />
+  <section class="relative mt-30 mb-30" aria-label="Hero de Granja Rodriz">
+    <!-- Imagen con fondo degradado -->
+    <div class="relative w-full sm:h-[650px]">
+      <img
+        src="/public/images/granja-rodriz-hero-main.webp"
+        class="rounded-3xl object-cover w-full h-full"
+        alt="Vista de la granja Rodriz con cerdos de raza en el campo"
+      />
 
-        <!-- Rectángulo de texto -->
-        <div
-            class="absolute bg-white rounded-2xl shadow-lg text-gray-800 px-6 py-4
-             -bottom-20 left-1/2 -translate-x-1/2 w-[300px] text-center
-             sm:-bottom-1 sm:left-auto sm:translate-x-0 sm:-right-1 sm:text-left sm:shadow-none sm:w-[450px] sm:h-[220px]"
-        >
-            <h2 class="text-lg sm:text-3xl font-semibold mb-2">
-                Criansa de calidad con las mejores razas
-            </h2>
-            <h4 class="sm:text-lg sm:text-pretty text-sm text-pretty">
-                En nuestra empresa, nos especializamos en la cría de puercos de
-                calidad mediante genética seleccionada, alimentación balanceada
-                y controles sanitarios.
-            </h4>
+      <!-- Máscara de degradado sobre la imagen -->
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent rounded-3xl"
+      >
+      </div>
+
+      <!-- Texto centrado para pantallas grandes, oculto en mobile -->
+      <div
+        class="hidden sm:flex absolute inset-0 items-center justify-center text-white text-center px-8"
+      >
+        <div class="p-10 rounded-2xl max-w-2xl">
+          <h1 class="text-5xl font-bold mb-4 text-yellow-400">
+            Crianza de calidad con las mejores razas
+          </h1>
+          <p class="text-2xl leading-relaxed">
+            En nuestra empresa, nos especializamos en la cría de puercos de
+            calidad mediante genética seleccionada, alimentación balanceada y
+            controles sanitarios.
+          </p>
         </div>
+      </div>
     </div>
+
+    <!-- Mobile original (no se toca) -->
+    <div
+      class="sm:hidden absolute bg-yellow-400 rounded-2xl shadow-lg text-gray-800 px-6 py-4
+             -bottom-20 left-1/2 -translate-x-1/2 w-[300px] text-center"
+    >
+      <h2 class="text-lg font-semibold mb-2">
+        Crianza de calidad con las mejores razas
+      </h2>
+      <p class="text-sm text-pretty">
+        En nuestra empresa, nos especializamos en la cría de puercos de calidad
+        mediante genética seleccionada, alimentación balanceada y controles
+        sanitarios.
+      </p>
+    </div>
+  </section>
 </Container>

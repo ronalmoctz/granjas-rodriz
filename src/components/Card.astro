@@ -1,4 +1,5 @@
 ---
+// Importaciones necesarias
 import Container from "./Container.astro";
 import { EmojiCard } from "../consts/card";
 
@@ -6,36 +7,43 @@ const cards = Object.values(EmojiCard);
 ---
 
 <Container>
-    <section class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24">
-        {
-            cards.map(({ title, description, color, image }) => (
-                <div
-                    class={`rounded-3xl ${color} 
+  <section class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24">
+    {/* Iteración sobre las tarjetas */}
+    {
+      cards.map(({ title, description, color, image }) => (
+        <article
+          class={`rounded-3xl ${color} 
                 w-[300px] h-[250px] sm:w-[330px] sm:h-[460px] text-pretty
                 p-4 sm:p-6 flex flex-col items-center sm:items-start justify-start`}
-                >
-                    {/* Emoji */}
-                    <div class="mb-2 sm:mb-4">
-                        <img
-                            src={image.logo.src}
-                            width={image.width}
-                            height={image.height}
-                            alt={`${title} emoji`}
-                            class="mx-auto sm:mx-0"
-                        />
-                    </div>
+          aria-labelledby={`card-title-${title}`}
+        >
+          {/* Emoji */}
+          <figure class="mb-2 sm:mb-4">
+            <img
+              src={image.logo.src}
+              width={image.width}
+              height={image.height}
+              alt={`${title} emoji`}
+              class="mx-auto sm:mx-0"
+            />
+            <figcaption class="sr-only">{title} emoji</figcaption>{" "}
+            {/* Descripción accesible */}
+          </figure>
 
-                    {/* Título */}
-                    <h2 class="text-base sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-8 text-center sm:text-left">
-                        {title}
-                    </h2>
+          {/* Título */}
+          <h2
+            id={`card-title-${title}`}
+            class="text-base sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-8 text-center sm:text-left"
+          >
+            {title}
+          </h2>
 
-                    {/* Descripción */}
-                    <p class="text-sm sm:text-xl text-gray-800 text-center sm:text-left text-pretty ">
-                        {description}
-                    </p>
-                </div>
-            ))
-        }
-    </section>
+          {/* Descripción */}
+          <p class="text-sm sm:text-xl text-gray-800 text-center sm:text-left text-pretty">
+            {description}
+          </p>
+        </article>
+      ))
+    }
+  </section>
 </Container>

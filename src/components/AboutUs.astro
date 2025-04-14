@@ -1,91 +1,86 @@
 ---
 import Container from "./Container.astro";
-import UpArrow from "../assets/arrow-up.svg";
 ---
 
 <Container>
-    <div
-        class="sm:bg-gray-100 w-full mb-24 rounded-2xl flex flex-col items-center"
+  <div
+    class="sm:bg-gray-100 w-full mb-24 rounded-2xl flex flex-col items-center"
+  >
+    <!-- Título Desktop -->
+    <h1
+      class="hidden md:inline-block mt-6 px-6 py-2 rounded-full border border-green-500 font-base text-center text-lg"
     >
-        <!-- Título Desktop -->
-        <h1
-            class="hidden md:inline-block mt-6 px-6 py-2 rounded-full border border-green-500 font-base text-center text-lg"
-        >
-            ¿Quiénes somos?
-        </h1>
+      ¿Quiénes somos?
+    </h1>
 
-        <!-- Primera Sección Desktop -->
-        <div
-            class="hidden md:flex w-full px-10 mt-10 justify-start items-center gap-4"
-        >
-            <img
-                src="/public/images/about-us.webp"
-                alt="Nosotros"
-                class="w-[300px] h-[300px] object-cover rounded-xl"
-            />
-            <p class="m-2 text-2xl max-w-xl">
-                En Granjas Rodri, nos dedicamos con pasión y compromiso a la <span
-                    class="text-green-500 font-semibold"
-                    >cría de puercos de calidad, combinando tradición y
-                    tecnología</span
-                > para ofrecer un producto confiable y calidad.
-            </p>
-        </div>
-
-        <!-- Segunda Sección Desktop -->
-        <div
-            class="hidden md:flex w-full px-10 mt-8 mb-9 justify-end gap-4 relative"
-        >
-            <p class="text-2xl max-w-xl">
-                En Granjas Rodri, nos dedicamos con pasión y compromiso a la <span
-                    class="text-green-500 font-semibold"
-                    >cría de puercos de calidad, combinando tradición y
-                    tecnología</span
-                > para ofrecer un producto confiable y calidad.
-            </p>
-            <img
-                src="/public/images/about-us-two.webp"
-                alt="Impacto"
-                class="w-[250px] h-[350px] object-cover rounded-xl"
-            />
-        </div>
-
-        <!-- Vista Mobile -->
-        <div class="md:hidden flex flex-col w-full px-4 mt-6 gap-6 mb-20">
-            <!-- Título (ya sin píldora) -->
-            <h1 class="text-left text-lg font-semibold">¿Quiénes somos?</h1>
-
-            <!-- Texto principal -->
-            <p class="text-sm text-pretty">
-                En Granjas Rodri, nos dedicamos con pasión y compromiso a la <span
-                    class="text-green-500 font-semibold"
-                    >cría de puercos de calidad, combinando tradición y
-                    tecnología</span
-                > para ofrecer un producto confiable y calidad.
-            </p>
-
-            <!-- Imagen principal -->
-            <div class="relative w-[350px] h-[250px] mx-auto">
-                <img
-                    src="/public/images/about-us.webp"
-                    alt="about-us-oink"
-                    class="w-full h-full object-cover rounded-xl"
-                />
-
-                <!-- Rectángulo con segundo texto -->
-                <div
-                    class="absolute bottom-[-85px] right-[-10px] w-[250px] h-[170px] bg-gray-100 shadow-lg p-4 text-sm rounded-xl"
-                >
-                    <p class="text-sm text-pretty">
-                        Fundada en El Arenal, Hidalgo, nuestra empresa nació con
-                        la visión de establecer un <span
-                            class="text-green-500 font-semibold"
-                            >modelo de producción eficiente y responsable,
-                            priorizando el bienestar animal, la sanidad</span
-                        > en cada etapa del proceso.
-                    </p>
-                </div>
-            </div>
-        </div>
+    <!-- Primera Sección Desktop -->
+    <div
+      class="hidden md:flex w-full px-10 mt-10 justify-start items-center gap-4"
+    >
+      <img
+        src="/public/images/about-us.webp"
+        alt="Granja Rodri - Cría de puercos de calidad"
+        class="w-[300px] h-[300px] object-cover rounded-xl"
+      />
+      <p class="m-2 text-2xl max-w-xl">
+        En Granjas Rodri, nos dedicamos con pasión y compromiso a la <span
+          class="text-green-500 font-semibold"
+          >cría de puercos de calidad, combinando tradición y tecnología</span
+        > para ofrecer un producto confiable y calidad.
+      </p>
     </div>
+
+    <!-- Segunda Sección Desktop -->
+    <div
+      class="hidden md:flex w-full px-10 mt-8 mb-9 justify-end gap-4 relative"
+    >
+      <p class="text-2xl max-w-xl">
+        En Granjas Rodri, nos dedicamos con pasión y compromiso a la <span
+          class="text-green-500 font-semibold"
+          >cría de puercos de calidad, combinando tradición y tecnología</span
+        > para ofrecer un producto confiable y calidad.
+      </p>
+      <img
+        src="/public/images/about-us-two.webp"
+        alt="Impacto"
+        class="w-[250px] h-[350px] object-cover rounded-xl"
+      />
+    </div>
+
+    <!-- Vista Mobile -->
+    <div class="md:hidden flex flex-col w-full px-4 mt-6 gap-6 mb-20">
+      <!-- Título (ya sin píldora) -->
+      <h2 class="text-left text-lg font-semibold">¿Quiénes somos?</h2>
+
+      <!-- Texto principal -->
+      <p class="text-sm text-pretty">
+        En Granjas Rodri, nos dedicamos con pasión y compromiso a la <span
+          class="text-green-500 font-semibold"
+          >cría de puercos de calidad, combinando tradición y tecnología</span
+        > para ofrecer un producto confiable y calidad.
+      </p>
+
+      <!-- Imagen principal -->
+      <div class="relative w-[350px] h-[250px] mx-auto">
+        <img
+          src="/public/images/about-us.webp"
+          alt="about-us-oink"
+          class="w-full h-full object-cover rounded-xl"
+        />
+
+        <!-- Rectángulo con segundo texto -->
+        <div
+          class="absolute bottom-[-85px] right-[-10px] w-[250px] h-[170px] bg-gray-100 shadow-lg p-4 text-sm rounded-xl"
+        >
+          <p class="text-sm text-pretty">
+            Fundada en El Arenal, Hidalgo, nuestra empresa nació con la visión
+            de establecer un <span class="text-green-500 font-semibold"
+              >modelo de producción eficiente y responsable, priorizando el
+              bienestar animal, la sanidad</span
+            > en cada etapa del proceso.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </Container>

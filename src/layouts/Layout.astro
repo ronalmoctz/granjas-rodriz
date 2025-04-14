@@ -9,22 +9,27 @@ import Footer from "../components/Footer.astro";
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Granjas Rodriz Oink y siempre contigo</title>
 
     <meta property="og:title" content="Granjas Rodriz Oink y siempre contigo" />
     <meta
       property="og:description"
-      content="Granjas Rodriz Oink y siempre contigo"
+      content="Granjas Rodriz, tu fuente confiable para cerdos de calidad"
     />
     <meta property="og:image" content="/images/og-image.webp" />
-    <meta property="og:title" content='”WhatsApp"/' />
-    <meta property="og:url" content="https://whatsapp.com" />
+    <meta property="og:url" content="https://granjasrodriz.com" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
       content="Granjas Rodriz Oink y siempre contigo"
     />
+    <meta
+      name="twitter:description"
+      content="Granjas Rodriz, tu fuente confiable para cerdos de calidad"
+    />
+    <meta name="twitter:image" content="/images/og-image.webp" />
+    <meta name="twitter:url" content="https://granjasrodriz.com" />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
   </head>
@@ -33,7 +38,6 @@ import Footer from "../components/Footer.astro";
     <main>
       <slot />
     </main>
-    <!-- Se renderiza la ruta que estamos viendo -->
     <Footer />
   </body>
 </html>
