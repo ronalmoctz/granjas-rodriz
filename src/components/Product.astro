@@ -1,0 +1,44 @@
+---
+import Container from "./Container.astro";
+---
+
+<Container>
+  <section class="flex flex-col lg:flex-row items-center gap-8 mt-30 mb-30">
+    <!-- Imagen + Título -->
+    <div class="relative w-full lg:w-1/2">
+      <!-- Título arriba de la imagen -->
+      <h2 class="relative text-black text-5xl font-bold">Productos</h2>
+
+      <img
+        src="/public/images/duroc2.webp"
+        alt="Cerdos"
+        class="rounded-xl w-full h-auto object-cover mt-6"
+      />
+    </div>
+
+    <!-- Texto + Botones -->
+    <div class="w-full lg:w-1/2 flex flex-col justify-center items-start gap-6">
+      <p class="text-lg text-gray-700">
+        Descubrí nuestras líneas genéticas de cerdos de alta calidad. Criados
+        bajo estrictos estándares para garantizar excelencia en cada ejemplar.
+      </p>
+
+      <div
+        class="flex items-center justify-center sm:gap-38 gap-32 flex-row sm:flex-row"
+      >
+        <a
+          href="/male"
+          class="bg-pink-300 rounded-full px-4 py-2 hover:bg-pink-400 hover:text-white transition duration-300 ease-in-out"
+        >
+          Ver machos
+        </a>
+        <a
+          href="/female"
+          class="bg-pink-300 rounded-full px-4 py-2 hover:bg-pink-400 hover:text-white transition duration-300 ease-in-out"
+        >
+          Ver hembras
+        </a>
+      </div>
+    </div>
+  </section>
+</Container>

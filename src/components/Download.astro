@@ -9,7 +9,7 @@ import Container from "./Container.astro";
         <img
             src="/public/images/granja-rodriz-hero.webp"
             class="rounded-2xl object-cover w-full h-full"
-            alt=""
+            alt="download-granja-rodriz"
         />
 
         <!-- Máscara de degradado -->
@@ -18,12 +18,22 @@ import Container from "./Container.astro";
         >
         </div>
 
-        <div class="absolute inset-0 flex mt-18 items-start px-6 text-white">
-            <h2 class="text-5xl font-bold">
+        <!-- Contenido -->
+        <div
+            class="absolute inset-0 flex flex-col lg:flex-row items-center lg:items-center justify-center lg:justify-between sm:px-16 w-full h-full"
+        >
+            <!-- Texto a la izquierda en desktop -->
+            <h2
+                class="text-white text-center lg:text-left text-2xl sm:text-2xl lg:text-5xl font-bold leading-tight"
+            >
                 Lleva a la mano <br />
-                nuestro catalogo
+                nuestro catálogo
             </h2>
-            <ButtonDownload />
+
+            <!-- Botón a la derecha en desktop -->
+            <div class="mt-4 mb-4 lg:mt-0">
+                <ButtonDownload class="scale-90 lg:scale-120" />
+            </div>
         </div>
     </div>
 </Container>

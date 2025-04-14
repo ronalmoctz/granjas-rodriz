@@ -7,48 +7,45 @@ import Footer from "../components/Footer.astro";
 
 <!doctype html>
 <html lang="es">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Granjas Rodriz Oink y siempre contigo</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Granjas Rodriz Oink y siempre contigo</title>
 
-		<meta
-			property="og:title"
-			content="Granjas Rodriz Oink y siempre contigo"
-		/>
-		<meta
-			property="og:description"
-			content="Granjas Rodriz Oink y siempre contigo"
-		/>
-		<meta property="og:image" content="/images/og-image.webp" />
-		<meta property="og:title" content='”WhatsApp"/' />
-		<meta property="og:url" content="https://whatsapp.com" />
-		<meta name="twitter:card" content="summary_large_image" />
-		<meta
-			name="twitter:title"
-			content="Granjas Rodriz Oink y siempre contigo"
-		/>
+    <meta property="og:title" content="Granjas Rodriz Oink y siempre contigo" />
+    <meta
+      property="og:description"
+      content="Granjas Rodriz Oink y siempre contigo"
+    />
+    <meta property="og:image" content="/images/og-image.webp" />
+    <meta property="og:title" content='”WhatsApp"/' />
+    <meta property="og:url" content="https://whatsapp.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Granjas Rodriz Oink y siempre contigo"
+    />
 
-		<link rel="icon" type="image/svg+xml" href="/favicon.webp" />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<slot />
-		</main>
-		<!-- Se renderiza la ruta que estamos viendo -->
-		<Footer />
-	</body>
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+  </head>
+  <body>
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <!-- Se renderiza la ruta que estamos viendo -->
+    <Footer />
+  </body>
 </html>
 
 <style>
-	html {
-		font-family: "Onest Variable", sans-serif;
-		scroll-behavior: smooth;
-	}
-	body {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
+  html {
+    font-family: "Onest Variable", sans-serif;
+    scroll-behavior: smooth;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 </style>
