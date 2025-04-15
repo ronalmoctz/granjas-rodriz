@@ -7,7 +7,9 @@ const cards = Object.values(EmojiCard);
 ---
 
 <Container>
-  <section class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24">
+  <section
+    class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24 animate-slide-up-fade"
+  >
     {/* Iteración sobre las tarjetas */}
     {
       cards.map(({ title, description, color, image }) => (
