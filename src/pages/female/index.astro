@@ -72,10 +72,15 @@ const malePigs = CERDOS.filter((cerdo) => cerdo.tipo === "hembra");
                 href={`https://wa.me/527721199599?text=${encodeURIComponent(`Hola, quisiera tener más información sobre el ejemplar ${cerdo.nombre}.`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                class="mt-6 px-5 py-2 bg-green-500 text-black font-medium rounded-full shadow hover:bg-green-600 transition-all w-fit flex items-center"
+                class="mt-6 px-5 py-1 text-black font-medium rounded-full shadow border-3 border-green-600 group hover:bg-green-600 hover:text-white transition-all duration-300 ease-in-out w-fit flex items-center transform hover:scale-105"
               >
                 Contactar por este ejemplar
-                <WhatsApp class="text-white bg-gray-100 rounded-full p-1 inline-block ml-2" width="32" height="32" />
+                <!-- Icono WhatsApp -->
+                <WhatsApp 
+                  class="text-white bg-green-600 rounded-full p-1 inline-block ml-2 transition-all duration-300 ease-in-out group-hover:bg-white group-hover:text-green-600" 
+                  width="32" 
+                  height="32" 
+                />
               </a>
             </div>
           </div>

@@ -1,5 +1,4 @@
 ---
-// Importaciones necesarias
 import Container from "./Container.astro";
 import { EmojiCard } from "../consts/card";
 
@@ -8,14 +7,13 @@ const cards = Object.values(EmojiCard);
 
 <Container>
   <section
-    class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24 animate-slide-up-fade"
+    class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24 animate-slide-up-fade lg:flex-nowrap lg:gap-6"
   >
-    {/* Iteración sobre las tarjetas */}
     {
       cards.map(({ title, description, color, image }) => (
         <article
           class={`rounded-3xl ${color} 
-                w-[300px] h-[250px] sm:w-[330px] sm:h-[460px] text-pretty
+                w-[300px] h-[250px] sm:w-[330px] sm:h-[460px] lg:w-[400px] lg:h-[300px] text-pretty
                 p-4 sm:p-6 flex flex-col items-center sm:items-start justify-start`}
           aria-labelledby={`card-title-${title}`}
         >
@@ -26,7 +24,7 @@ const cards = Object.values(EmojiCard);
               width={image.width}
               height={image.height}
               alt={`${title} emoji`}
-              class="mx-auto sm:mx-0"
+              class="mx-auto sm:mx-0 object-contain"
             />
             <figcaption class="sr-only">{title} emoji</figcaption>{" "}
             {/* Descripción accesible */}
@@ -35,13 +33,13 @@ const cards = Object.values(EmojiCard);
           {/* Título */}
           <h2
             id={`card-title-${title}`}
-            class="text-base sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-8 text-center sm:text-left"
+            class="text-base sm:text-2xl lg:text-lg font-bold text-gray-900 mb-2 sm:mb-8 text-center sm:text-left"
           >
             {title}
           </h2>
 
           {/* Descripción */}
-          <p class="text-sm sm:text-xl text-gray-800 text-center sm:text-left text-pretty">
+          <p class="text-sm sm:text-xl lg:text-base text-gray-800 text-center sm:text-left text-pretty">
             {description}
           </p>
         </article>
