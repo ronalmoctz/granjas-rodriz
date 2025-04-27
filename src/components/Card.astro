@@ -7,13 +7,16 @@ const cards = Object.values(EmojiCard);
 
 <Container>
   <section
-    class="flex flex-wrap justify-center sm:gap-32 gap-10 mt-20 mb-24 animate-slide-up-fade lg:flex-nowrap lg:gap-6"
+    class="flex flex-col md:flex-col lg:flex-row xl:flex-nowrap flex-wrap justify-center
+      gap-6 md:gap-10 lg:gap-8 xl:gap-32 mt-20 mb-24 animate-slide-up-fade items-center lg:items-stretch"
   >
     {
       cards.map(({ title, description, color, image }) => (
         <article
-          class={`rounded-3xl ${color} 
-                w-[300px] h-[250px] sm:w-[330px] sm:h-[460px] lg:w-[400px] lg:h-[300px] text-pretty
+          class={`rounded-3xl ${color}
+                w-[300px] h-[250px] sm:w-[330px] sm:h-[460px]
+                md:w-[400px] md:h-[320px] lg:w-[480px] lg:h-[340px] xl:w-[330px] xl:h-[460px]
+                text-pretty
                 p-4 sm:p-6 flex flex-col items-center sm:items-start justify-start`}
           aria-labelledby={`card-title-${title}`}
         >
@@ -33,13 +36,13 @@ const cards = Object.values(EmojiCard);
           {/* Título */}
           <h2
             id={`card-title-${title}`}
-            class="text-base sm:text-2xl lg:text-lg font-bold text-gray-900 mb-2 sm:mb-8 text-center sm:text-left"
+            class="text-base sm:text-2xl md:text-xl lg:text-xl xl:text-2xl font-bold text-gray-900 mb-2 sm:mb-8 text-center sm:text-left"
           >
             {title}
           </h2>
 
           {/* Descripción */}
-          <p class="text-sm sm:text-xl lg:text-base text-gray-800 text-center sm:text-left text-pretty">
+          <p class="text-sm sm:text-xl md:text-base lg:text-xl xl:text-xl text-gray-800 text-center sm:text-left text-pretty">
             {description}
           </p>
         </article>
