@@ -32,8 +32,14 @@ Sitio web institucional para **Granjas Rodriz**, especializado en la cría y ven
 **Resultados:**
 
 <p align="center">
-  <img src="https://www.dropbox.com/scl/fi/da5fgcbzdpj26srcv2lob/Screenshot-2025-07-23-160154.png?raw=1" alt="Lighthouse SEO" width="400"/>
-  <img src="https://www.dropbox.com/scl/fi/f5s1cppsielv0jw3v8bel/Screenshot-2025-07-23-160116.png?raw=1" alt="Lighthouse Performance" width="400"/>
+  <picture>
+    <source srcset="https://res.cloudinary.com/doiulaa3y/image/upload/v1753308982/Screenshot_2025-07-23_160154_xmixfa.png" type="image/png" />
+    <img src="https://res.cloudinary.com/doiulaa3y/image/upload/v1753308982/Screenshot_2025-07-23_160154_xmixfa.png" alt="Lighthouse SEO Result" width="400" />
+  </picture>
+  <picture>
+    <source srcset="https://res.cloudinary.com/doiulaa3y/image/upload/v1753308982/Screenshot_2025-07-23_160116_fdzuyn.png" type="image/png" />
+    <img src="https://res.cloudinary.com/doiulaa3y/image/upload/v1753308982/Screenshot_2025-07-23_160116_fdzuyn.png" alt="Lighthouse Performance Result" width="400" />
+  </picture>
 </p>
 
 > [!SUCCESS]
