@@ -1,34 +1,45 @@
 # Granjas Rodriz 🐷
 
-[!NOTE]  
-Este proyecto fue desarrollado con [Astro](https://astro.build), TailwindCSS y está optimizado para SEO y rendimiento.
+![Astro](https://img.shields.io/badge/Astro-Framework-blueviolet?logo=astro)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-Utility-blue?logo=tailwindcss)
+![SEO Optimizado](https://img.shields.io/badge/SEO-Optimizado-brightgreen)
+![Deploy](https://img.shields.io/badge/Deploy-Vercel-black?logo=vercel)
+
+> [!IMPORTANT]
+> Este proyecto está **desplegado y disponible** en:  
+> [https://granjas-rodriz.vercel.app/](https://granjas-rodriz.vercel.app/)
 
 ## Descripción
 
-Sitio web para **Granjas Rodriz**, dedicado a la cría y venta de cerdos de calidad. Incluye catálogo descargable, información de productos, contacto y presentación institucional.
+Sitio web institucional para **Granjas Rodriz**, especializado en la cría y venta de cerdos de alta calidad. El sitio ofrece catálogo descargable, información detallada de productos, contacto directo y presentación de la empresa.
 
-## Características
+> [!TIP]
+> Optimizado para SEO y rendimiento, con diseño responsivo y animaciones modernas.
 
-- Catálogo PDF descargable
-- Sección de productos (machos y hembras)
-- Información institucional y contacto
-- Diseño responsivo y animaciones
-- Auditoría SEO realizada con Lighthouse
+## Características principales
 
-## Auditoría SEO
+- 📄 Catálogo PDF descargable
+- 🐖 Sección de productos (machos y hembras)
+- 🏢 Información institucional y contacto
+- 📱 Diseño responsivo y animaciones
+- 🚀 Auditoría SEO realizada con Lighthouse
 
-Se realizó una auditoría SEO usando **Lighthouse** para asegurar el mejor rendimiento y posicionamiento en buscadores.
+## Auditoría SEO & Performance
 
-### Resultados
+> [!NOTE]
+> Se realizó una auditoría SEO y de rendimiento usando **Lighthouse** para asegurar la mejor experiencia y posicionamiento.
 
-![Lighthouse SEO](https://www.dropbox.com/scl/fi/da5fgcbzdpj26srcv2lob/Screenshot-2025-07-23-160154.png?raw=1)
-![Lighthouse Performance](https://www.dropbox.com/scl/fi/f5s1cppsielv0jw3v8bel/Screenshot-2025-07-23-160116.png?raw=1)
+**Resultados:**
 
-[!TIP]  
-Los resultados muestran puntuaciones altas en SEO y rendimiento, garantizando una experiencia óptima para los usuarios.
+<p align="center">
+  <img src="https://www.dropbox.com/scl/fi/da5fgcbzdpj26srcv2lob/Screenshot-2025-07-23-160154.png?raw=1" alt="Lighthouse SEO" width="400"/>
+  <img src="https://www.dropbox.com/scl/fi/f5s1cppsielv0jw3v8bel/Screenshot-2025-07-23-160116.png?raw=1" alt="Lighthouse Performance" width="400"/>
+</p>
 
-## Instalación
+> [!SUCCESS]
+> Puntuaciones sobresalientes en SEO y rendimiento, garantizando una experiencia óptima para los usuarios.
 
-```sh
-npm install
-npm run dev
+---
+
+¿Tienes dudas o sugerencias?  
+Contáctanos a través del sitio
