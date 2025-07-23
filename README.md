@@ -42,7 +42,7 @@ Sitio web institucional para **Granjas Rodriz**, especializado en la cría y ven
   </picture>
 </p>
 
-> [!SUCCESS]
+
 > Puntuaciones sobresalientes en SEO y rendimiento, garantizando una experiencia óptima para los usuarios.
 
 ---
